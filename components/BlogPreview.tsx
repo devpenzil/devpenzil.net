@@ -14,13 +14,16 @@ function BlogPreview() {
         {blogs.slice(0, 3).map((obj, index) => {
           return (
             <a href={obj.link} key={index} className="w-1/3">
-              <div className="w-full">
-                <div
-                  className={`h-80 bg-[url('https://images.pexels.com/photos/28350926/pexels-photo-28350926/free-photo-of-a-computer-desk-with-a-monitor-and-keyboard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover rounded-md`}
-                ></div>
-                <div className="text-2xl  font-semibold">{obj.name}</div>
-                <div className="text-xs text-slate-600  font-semibold">
-                  {obj.date} . {obj.read_time}
+              <div className="card bg-base-100 w-96 shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
                 </div>
               </div>
             </a>

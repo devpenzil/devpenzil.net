@@ -6,7 +6,7 @@ import React from "react";
 function projects() {
   return (
     <div className="w-2/3 container mx-auto  font-semibold ">
-      <Spacer gap={"h-20"} />
+      <Spacer gap={"h-10"} />
       <PageHeader
         heading="A selection of my favorite works."
         label="Projects"

@@ -14,6 +14,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: ["light", "sunset"],
+  },
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
 export default config;
