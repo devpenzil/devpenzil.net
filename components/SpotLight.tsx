@@ -5,10 +5,10 @@ function SpotLight() {
   return (
     <div className=" pb-20 ">
       <div className="flex justify-between">
-        <div className="text-7xl font-bold leading-[100px]">
+        <div className="text-8xl font-bold leading-[120px]">
           I&apos;m Ajo. <br /> I <span className="text-green-500">Plan</span>,
           <span className="text-purple-500">Build</span> and{" "}
-          <span className="text-amber-500">Deploy</span> <br /> Products
+          <span className="text-amber-500">Deploy</span> <br /> Apps
         </div>
       </div>
 

@@ -1,7 +1,17 @@
-import { blogs } from "@/db/blogs";
+import { devArticlesType } from "@/types/service";
+import axios from "axios";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 function BlogPreview() {
+  const [blogs, setBlogs] = useState<devArticlesType>();
+  useEffect(() => {
+    axios
+      .get("https://dev.to/api/articles?username=devpenzil")
+      .then((response) => {
+        setBlogs(response.data);
+      });
+  }, []);
   return (
     <div>
       <div className="text-3xl font-semibold">
@@ -11,19 +21,19 @@ function BlogPreview() {
         Check out a few of my most recent publishing.
       </div>
       <div className="flex flex-row gap-3 mt-4">
-        {blogs.slice(0, 3).map((obj, index) => {
+        {blogs?.slice(0, 3).map((obj, index) => {
           return (
-            <a href={obj.link} key={index} className="w-1/3">
+            <a href={obj?.url} key={index} className="w-1/3">
               <div className="card bg-base-100 w-96 shadow-xl">
                 <figure>
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                  />
+                  <img src={obj?.cover_image} alt="Shoes" />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 className="card-title h-20">{obj?.title}</h2>
+                  <p>
+                    {obj?.readable_publish_date} . {obj?.reading_time_minutes}{" "}
+                    Min Read
+                  </p>
                 </div>
               </div>
             </a>
