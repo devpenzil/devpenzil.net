@@ -24,11 +24,11 @@ function Blogs() {
         heading="Insightful and helpful content curated for you."
       />
       <Spacer gap="h-20" />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {blogs?.map((obj, index) => {
           return (
             <a href={obj.url} key={index}>
-              <div className="card card-compact bg-base-100 w-96 shadow-xl ">
+              <div className="card card-compact bg-base-100 sm:w-full md:w-96 shadow-xl ">
                 <figure>
                   <img src={obj?.cover_image} alt="Shoes" />
                 </figure>

@@ -21,10 +21,10 @@ function BlogPreview() {
       <div className="text-sm mt-4">
         Check out a few of my most recent publishing.
       </div>
-      <div className="flex flex-row gap-3 mt-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         {blogs?.slice(0, 3).map((obj, index) => {
           return (
-            <a href={obj?.url} key={index} className="w-1/3">
+            <a href={obj?.url} key={index} className="sm:w-full md:w-1/3">
               <div className="card bg-base-100 w-96 shadow-xl">
                 <figure>
                   <img src={obj?.cover_image} alt="Shoes" />
