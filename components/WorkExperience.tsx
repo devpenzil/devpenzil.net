@@ -1,19 +1,6 @@
 import React from "react";
 
 function WorkExperience() {
-  const experienceData = [
-    {
-      company: "PIT Solutions",
-      from: "Jan 2024",
-      to: "Present",
-    },
-
-    {
-      company: "Neoito",
-      from: "Aug 2022",
-      to: "Jan 2024",
-    },
-  ];
   return (
     <div className="mt-6 text-lg">
       <div className="text-3xl font-semibold">Work Experience</div>
@@ -38,14 +25,9 @@ function WorkExperience() {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">1984</time>
-              <div className="text-lg font-black">First Macintosh computer</div>
-              The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-              original Apple Macintosh personal computer. It played a pivotal
-              role in establishing desktop publishing as a general office
-              function. The motherboard, a 9 in (23 cm) CRT monitor, and a
-              floppy drive were housed in a beige case with integrated carrying
-              handle; it came with a keyboard and single-button mouse.
+              <time className="font-mono italic">2024</time>
+              <div className="text-lg font-black">PIT Solutions</div>
+              Software Engineer (React Native)
             </div>
             <hr />
           </li>
@@ -66,12 +48,9 @@ function WorkExperience() {
               </svg>
             </div>
             <div className="timeline-end md:mb-10">
-              <time className="font-mono italic">1998</time>
-              <div className="text-lg font-black">iMac</div>
-              iMac is a family of all-in-one Mac desktop computers designed and
-              built by Apple Inc. It has been the primary part of Apple's
-              consumer desktop offerings since its debut in August 1998, and has
-              evolved through seven distinct forms
+              <time className="font-mono italic">2022</time>
+              <div className="text-lg font-black">Neoito</div>
+              Associate Software Engineer (React Native)
             </div>
             <hr />
           </li>

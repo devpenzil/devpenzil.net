@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { devArticlesType } from "@/types/service";
 import axios from "axios";
 import Link from "next/link";

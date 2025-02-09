@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import Link from "next/link";
 import React from "react";
 
@@ -56,7 +57,7 @@ function NavBar() {
               type="checkbox"
               value="synthwave"
               className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
-              onChange={(e) => {
+              onChange={() => {
                 localStorage.getItem("theme") === "light"
                   ? localStorage.setItem("theme", "sunset")
                   : localStorage.setItem("theme", "light");

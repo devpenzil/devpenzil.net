@@ -49,8 +49,11 @@ function Footer() {
           <a className="link link-hover">
             <Link href={"/resume"}>Resume</Link>
           </a>
-          <a className="link link-hover">
-            <Link href={"/sponsor"}>Sponsor</Link>
+          <a
+            className="link link-hover"
+            href="https://github.com/sponsors/devpenzil"
+          >
+            Sponsor
           </a>
         </nav>
       </footer>

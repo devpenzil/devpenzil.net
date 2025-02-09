@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import Spacer from "@/components/Spacer";
