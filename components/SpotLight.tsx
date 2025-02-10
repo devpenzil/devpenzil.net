@@ -13,7 +13,7 @@ function SpotLight() {
       </div>
 
       <div className="mt-6 flex flex-row gap-8">
-        <a href="https://cal.com/devpenzil/30min">
+        <a href="https://cal.com/ajoalex/30min">
           <div className="bg-slate-800 py-3 px-8 rounded-full text-white font-semibold ring-4 ring-slate-800 hover:ring-offset-4 transition duration-150">
             Book a Meeting
           </div>
